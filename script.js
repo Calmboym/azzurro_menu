@@ -2,66 +2,66 @@
 const categories = [
   { id:'hot', title:'نوشیدنی گرم بر پایه قهوه', items:[
     {name:'اسپرسو',price:'86,000', img:'images/espresso.jpg'},
-    {name:'اسپرسو ماکیاتو',price:'85,000', img:'images/macchiato.jpg'},
-    {name:'کورتادو',price:'80,000', img:'images/cortado.jpg'},
-    {name:'فلت وایت',price:'90,000', img:'images/flatwhite.jpg'},
-    {name:'لاته',price:'90,000', img:'images/latte.jpg'},
-    {name:'فلیور لاته',price:'90,000', img:'images/flavorlatte.jpg'},
-    {name:'اسپانیش لاته',price:'90,000', img:'images/spanishlatte.jpg'},
-    {name:'موکا',price:'90,000', img:'images/mocha.jpg'},
-    {name:'آمریکانو',price:'90,000', img:'images/americano.jpg'},
-    {name:'آفوگاتو',price:'90,000', img:'images/affogato.jpg'},
-    {name:'آتزور کافی (ویژه)',price:'90,000', img:'images/azzurro-special.jpg'}
+    {name:'اسپرسو ماکیاتو',price:'0,000', img:'images/macchiato.jpg'},
+    {name:'کورتادو',price:'108,000', img:'images/cortado.jpg'},
+    {name:'فلت وایت',price:'0,000', img:'images/flatwhite.jpg'},
+    {name:'لاته',price:'124,000', img:'images/latte.jpg'},
+    {name:'فلیور لاته',price:'0,000', img:'images/flavorlatte.jpg'},
+    {name:'اسپانیش لاته',price:'0,000', img:'images/spanishlatte.jpg'},
+    {name:'موکا',price:'138,000', img:'images/mocha.jpg'},
+    {name:'آمریکانو',price:'98,000', img:'images/americano.jpg'},
+    {name:'آفوگاتو',price:'138,000', img:'images/affogato.jpg'},
+    {name:'آتزور کافی (ویژه)',price:'0,000', img:'images/azzurro-special.jpg'}
   ]},
   { id:'cold', title:'نوشیدنی سرد بر پایه قهوه', items:[
-    {name:'آیس اسپرسو',price:'86,000', img:'images/ice-espresso.jpg'},
-    {name:'آیس آمریکانو',price:'86,000', img:'images/ice-americano.jpg'},
-    {name:'آیس کورتادو',price:'86,000', img:'images/ice-cortado.jpg'},
-    {name:'آیس لاته',price:'86,000', img:'images/ice-latte.jpg'},
-    {name:'آیس موکا',price:'86,000', img:'images/ice-mocha.jpg'},
-    {name:'آیس کارامل ماکیاتو',price:'86,000', img:'images/ice-caramel-macchiato.jpg'},
-    {name:'آیس آتزورو کافی (ویژه)',price:'86,000', img:'images/ice-azzurro-special.jpg'},
-    {name:'کوکونات فراپاچینو',price:'86,000', img:'images/coconut-frappuccino.jpg'},
-    {name:'هازلنات فراپاچینو',price:'86,000', img:'images/hazelnut-frappuccino.jpg'},
-    {name:'موکا فراپاچینو',price:'86,000', img:'images/mocha-frappuccino.jpg'}
+    {name:'آیس اسپرسو',price:'98,000', img:'images/ice-espresso.jpg'},
+    {name:'آیس آمریکانو',price:'0,000', img:'images/ice-americano.jpg'},
+    {name:'آیس کورتادو',price:'0,000', img:'images/ice-cortado.jpg'},
+    {name:'آیس لاته',price:'0,000', img:'images/ice-latte.jpg'},
+    {name:'آیس موکا',price:'0,000', img:'images/ice-mocha.jpg'},
+    {name:'آیس کارامل ماکیاتو',price:'0,000', img:'images/ice-caramel-macchiato.jpg'},
+    {name:'آیس آتزورو کافی (ویژه)',price:'0,000', img:'images/ice-azzurro-special.jpg'},
+    {name:'کوکونات فراپاچینو',price:'0,000', img:'images/coconut-frappuccino.jpg'},
+    {name:'هازلنات فراپاچینو',price:'0,000', img:'images/hazelnut-frappuccino.jpg'},
+    {name:'موکا فراپاچینو',price:'0,000', img:'images/mocha-frappuccino.jpg'}
   ]},
   { id:'maq', title:'قهوه های دمی', items:[
-    {name:'V60',price:'86,000', img:'images/v60.jpg'},
-    {name:'آیروپرس',price:'86,000', img:'images/aeropress.jpg'},
-    {name:'سایفون',price:'86,000', img:'images/siphon.jpg'},
-    {name:'کلدبرو',price:'86,000', img:'images/coldbrew.jpg'}
+    {name:'V60',price:'0,000', img:'images/v60.jpg'},
+    {name:'آیروپرس',price:'0,000', img:'images/aeropress.jpg'},
+    {name:'سایفون',price:'0,000', img:'images/siphon.jpg'},
+    {name:'کلدبرو',price:'0,000', img:'images/coldbrew.jpg'}
   ]},
   { id:'special', title:'گرم های ویژه', items:[
-    {name:'چای',price:'86,000', img:'images/tea.jpg'},
-    {name:'موکاتزو',price:'86,000', img:'images/mokazzo.jpg'},
-    {name:'ماسالا',price:'86,000', img:'images/masala.jpg'},
-    {name:'هات‌چاکلت',price:'86,000', img:'images/hotchocolate.jpg'},
-    {name:'ایتلین چاکلت',price:'86,000', img:'images/italian-chocolate.jpg'}
+    {name:'چای',price:'0,000', img:'images/tea.jpg'},
+    {name:'موکاتزو',price:'0,000', img:'images/mokazzo.jpg'},
+    {name:'ماسالا',price:'0,000', img:'images/masala.jpg'},
+    {name:'هات‌چاکلت',price:'0,000', img:'images/hotchocolate.jpg'},
+    {name:'ایتلین چاکلت',price:'0,000', img:'images/italian-chocolate.jpg'}
   ]},
   { id:'mocktail', title:'موکتل ها', items:[
-    {name:'آتزورو لیموناد',price:'86,000', img:'images/limonade.jpg'},
-    {name:'آتزورو موهیتو',price:'86,000', img:'images/mojito.jpg'},
-    {name:'سونیوبلو',price:'86,000', img:'images/sonioblu.jpg'},
-    {name:'گراناتو',price:'86,000', img:'images/granato.jpg'},
-    {name:'روبینو روسو',price:'86,000', img:'images/rubino.jpg'},
-    {name:'ورداویوو',price:'86,000', img:'images/verdavivo.jpg'},
-    {name:'ماچاتزو',price:'86,000', img:'images/machazzo.jpg'},
-    {name:'پرلارزا',price:'86,000', img:'images/perlarza.jpg'},
-    {name:'آئورا',price:'86,000', img:'images/aura.jpg'}
+    {name:'آتزورو لیموناد',price:'0,000', img:'images/limonade.jpg'},
+    {name:'آتزورو موهیتو',price:'0,000', img:'images/mojito.jpg'},
+    {name:'سونیوبلو',price:'188,000', img:'images/sonioblu.jpg'},
+    {name:'گراناتو',price:'168,000', img:'images/granato.jpg'},
+    {name:'روبینو روسو',price:'168,000', img:'images/rubino.jpg'},
+    {name:'ورداویوو',price:'168,000', img:'images/verdavivo.jpg'},
+    {name:'ماچاتزو',price:'198,000', img:'images/machazzo.jpg'},
+    {name:'پرلارزا',price:'168,000', img:'images/perlarza.jpg'},
+    {name:'آئورا',price:'168,000', img:'images/aura.jpg'}
   ]},
   { id:'shake', title:'شیک ها', items:[
-    {name:'آروتزو',price:'86,000', img:'images/arotzo.jpg'},
-    {name:'چوکومنتا',price:'86,000', img:'images/chocomenta.jpg'},
-    {name:'سانگریاکس',price:'86,000', img:'images/sangriax.jpg'},
-    {name:'اپلزا',price:'86,000', img:'images/appleza.jpg'},
-    {name:'چوکوناتس',price:'86,000', img:'images/choconuts.jpg'}
+    {name:'آروتزو',price:'198,000', img:'images/arotzo.jpg'},
+    {name:'چوکومنتا',price:'198,000', img:'images/chocomenta.jpg'},
+    {name:'سانگریاکس',price:'198,000', img:'images/sangriax.jpg'},
+    {name:'اپلزا',price:'198,000', img:'images/appleza.jpg'},
+    {name:'چوکوناتس',price:'198,000', img:'images/choconuts.jpg'}
   ]},
   { id:'smoothie', title:'اسموتی ها', items:[
-    {name:'ملوگرانو',price:'86,000', img:'images/melograno.jpg'},
-    {name:'انکافتو',price:'86,000', img:'images/encaffeto.jpg'},
-    {name:'فیاما',price:'86,000', img:'images/fiama.jpg'},
-    {name:'اسپرو ویوا',price:'86,000', img:'images/spero-viva.jpg'},
-    {name:'فریس وردا',price:'86,000', img:'images/fres-verda.jpg'}
+    {name:'ملوگرانو',price:'152,000', img:'images/melograno.jpg'},
+    {name:'انکافتو',price:'152,000', img:'images/encaffeto.jpg'},
+    {name:'فیاما',price:'152,000', img:'images/fiama.jpg'},
+    {name:'اسپرو ویوا',price:'152,000', img:'images/spero-viva.jpg'},
+    {name:'فریس وردا',price:'152,000', img:'images/fres-verda.jpg'}
   ]}
 ];
 
@@ -220,3 +220,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
