@@ -23,7 +23,11 @@ const categories = [
     {name:'آیس آتزورو کافی (ویژه)',price:'0,000', img:'images/ice-azzurro-special.jpg'},
     {name:'کوکونات فراپاچینو',price:'0,000', img:'images/coconut-frappuccino.jpg'},
     {name:'هازلنات فراپاچینو',price:'0,000', img:'images/hazelnut-frappuccino.jpg'},
-    {name:'موکا فراپاچینو',price:'0,000', img:'images/mocha-frappuccino.jpg'}
+    {name:'موکا فراپاچینو',price:'0,000', img:'images/mocha-frappuccino.jpg'},
+    {name:'آیس اسپرولینا نارگیل', price:'136,000', img:'images/ice-spirulina-coconut.jpg'},
+    {name:'آیس اسپرولینا توت‌فرنگی', price:'146,000',img:'images/ice-spirulina-straberry.jpg'},
+    {name:'آیس اسپرولینا پسته', price:'168,000',img:'images/ice-spirulina-pistachio.jpg'},
+    {name:' کاراملآیس لاته',price:'148,000', img:'images/ice-latte-caramel.jpg'}
   ]},
   { id:'maq', title:'قهوه های دمی', items:[
     {name:'V60',price:'0,000', img:'images/v60.jpg'},
@@ -65,19 +69,19 @@ const categories = [
   ]}
 ];
 
-const slidesEl = document.getElementById('slides');
-const catBar = document.getElementById('categoryBar');
-const categoriesGrid = document.getElementById('categoriesGrid');
-let currentSlide = null;
-
 /* build categories grid (covers categories page) */
 function buildCategoriesGrid(){
-  categories.forEach((c)=>{
+  categories.forEach((c, idx)=>{
     const card = document.createElement('div');
     card.className = 'cat-card';
 
+    // عکس کاور هر دسته: اگر اولین آیتم عکس داشت → همونو می‌گیریم
     const img = document.createElement('img');
-    img.src = c.items[0].img; // اولین عکس هر دسته برای کاور
+    if (c.items[0] && c.items[0].img) {
+      img.src = c.items[0].img;
+    } else {
+      img.src = 'images/' + placeholderImgs[idx % placeholderImgs.length];
+    }
     img.alt = c.title;
 
     const title = document.createElement('div');
@@ -120,12 +124,16 @@ function buildSlides(){
     itemsWrap.className = 'items';
 
     // create item cards
-    c.items.forEach(itemData=>{
+    c.items.forEach((itemData, i)=>{
       const it = document.createElement('div');
       it.className = 'item';
 
       const img = document.createElement('img');
-      img.src = itemData.img;  // ✅ حالا هر آیتم عکس خودش رو می‌گیره
+      if(itemData.img){
+        img.src = itemData.img;
+      } else {
+        img.src = 'images/' + placeholderImgs[i % placeholderImgs.length];
+      }
       img.alt = itemData.name;
       img.onclick = ()=> openModal(img.src);
 
@@ -138,7 +146,7 @@ function buildSlides(){
 
       const price = document.createElement('div');
       price.className = 'price';
-      price.textContent = itemData.price + ' تومان';
+      price.textContent = (itemData.price || '—') + ' تومان';
 
       meta.appendChild(title);
       meta.appendChild(price);
@@ -220,4 +228,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
