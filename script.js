@@ -1,8 +1,10 @@
+/* placeholder images list */
 const placeholderImgs = [
   "placeholder1.jpg",
   "placeholder2.jpg",
   "placeholder3.jpg"
 ];
+
 /* data: categories and items (from your list) */
 const categories = [
   { id:'hot', title:'نوشیدنی گرم بر پایه قهوه', items:[
@@ -32,7 +34,7 @@ const categories = [
     {name:'آیس اسپرولینا نارگیل', price:'136,000', img:'images/ice-spirulina-coconut.jpg'},
     {name:'آیس اسپرولینا توت‌فرنگی', price:'146,000',img:'images/ice-spirulina-straberry.jpg'},
     {name:'آیس اسپرولینا پسته', price:'168,000',img:'images/ice-spirulina-pistachio.jpg'},
-    {name:' کاراملآیس لاته',price:'148,000', img:'images/ice-latte-caramel.jpg'}
+    {name:'  آیس لاته کارامل',price:'148,000', img:'images/ice-latte-caramel.jpg'}
   ]},
   { id:'maq', title:'قهوه های دمی', items:[
     {name:'V60',price:'0,000', img:'images/v60.jpg'},
@@ -73,6 +75,12 @@ const categories = [
     {name:'فریس وردا',price:'152,000', img:'images/fres-verda.jpg'}
   ]}
 ];
+
+
+const slidesEl = document.getElementById('slides');
+const catBar = document.getElementById('categoryBar');
+const categoriesGrid = document.getElementById('categoriesGrid');
+let currentSlide = null;
 
 /* build categories grid (covers categories page) */
 function buildCategoriesGrid(){
@@ -233,6 +241,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
-
