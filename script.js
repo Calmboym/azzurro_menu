@@ -1,3 +1,8 @@
+const placeholderImgs = [
+  "placeholder1.jpg",
+  "placeholder2.jpg",
+  "placeholder3.jpg"
+];
 /* data: categories and items (from your list) */
 const categories = [
   { id:'hot', title:'نوشیدنی گرم بر پایه قهوه', items:[
@@ -228,5 +233,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
